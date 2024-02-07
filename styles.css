@@ -1,39 +1,51 @@
 body.main {
     font: normal 14px Arial, Helvetica, sans-serif;
-    /*overflow-y: hidden; /* Hide vertical scrollbar */
+    color: #10364B
+        /*overflow-y: hidden; /* Hide vertical scrollbar */
 }
 
 body.page {
     font: normal 14px Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #fffaf0;
+    color: #10364B;
+    background-color: #FDF3E2;
 }
 
-div.text{
+div.text {
     font: normal 12px Arial, Helvetica, sans-serif;
     text-align: center;
     flex-basis: 50%;
 }
 
 
-
+span.right {
+    float: right;
+    margin-right: 8px;
+}
 
 mainbox {
     position: static;
     left: max(50vw, 300px);
     height: 100%;
     width: 100%;
-    
+
 }
 
 .content {
     width: 50%;
     text-align: justify;
-    margin: auto; 
-    margin-left: 25vw  ;
+    margin: auto;
+    margin-left: 25vw;
 
 }
 
+
+img.rounded {
+    padding:0;
+    border-radius: 5%;
+    border:5px solid #DF9C8E;
+    margin:auto;
+}
 
 .center {
     text-align: center;
@@ -46,7 +58,7 @@ mainbox {
 }
 
 iframe.page {
-    border:none;
+    border: none;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -54,40 +66,47 @@ iframe.page {
 }
 
 a {
-    text-decoration-line: none;   
+    text-decoration-line: none;
+    color: #166177
 }
 
-.right{
-    float:right;
+.right {
+    float: right;
     background-color: inherit;
 }
 
-.left{
-    float:left;
+.left {
+    float: left;
     background-color: inherit;
 }
 
-hr.main{
-    width:100%; 
-    float:right;
-    padding-left:0%;
-    color:  rgb(43, 53, 83);
-    border-top: 2px solid rgb(43, 53, 83);
+hr.main {
+    width: 100%;
+    float: right;
+    padding-left: 0%;
+    border: 0;
+    /*color:  rgb(100, 113, 153);*/
+    color: #F3DBC2;
+    border-top: 5px solid #F3DBC2;
     background-color: inherit;
 }
 
-hr.sub{
-    width:90%; 
-    float:right;
-    padding-right:3%;
-    color:  rgb(100, 113, 153);
-    background-color: inherit;
+hr.sub {
+    width: 90%;
+    float: right;
+    padding-right: 3%;
+    /*color:  rgb(100, 113, 153);*/
+    color: #F3DBC2;
+    border: 0;
+    border-top: 3px solid #F3DBC2;
+    background-color: #F3DBC2;
+    ;
 }
 
 p.history {
     margin-left: 10%;
-    padding-bottom:-10%;
-    padding-top:0
+    padding-bottom: -10%;
+    padding-top: 0
 }
 
 /*
@@ -105,41 +124,41 @@ li {
 li.history {
     background-color: transparent;
     color: black;
-    width:100%;
+    width: 100%;
 }
 
 li.navMa {
-    color:white;
-    background-color: rgb(43, 53, 83);
+    color: #FDF3E2;
+    background-color: #166177;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin:10%; 
+    margin: 10%;
     transform: translateX(-16px);
     padding-left: 5px;
 }
 
 li.navLi {
-    color:white;
-    background-color: rgb(43, 53, 83);
-    padding-right: 20px;
+    color: #FDF3E2;
+    background-color: #166177;
+    padding-right: 25px;
     padding-left: 5px;
     margin-right: 20px;
-    background-color:transparent;
+    background-color: transparent;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin:10%; 
+    margin: 10%;
 }
 
 li.navLi:hover {
-    background-color: rgb(43, 53, 83);
+    background-color: #166177;
     transition-duration: 0.3s;
     transform: translateX(-16px);
 }
 
-li.navLi:not(:hover) { 
+li.navLi:not(:hover) {
     background-color: transparent;
     transition-duration: 0.3s;
- }
+}
 
 li.entry {
     margin-bottom: 1%;
@@ -149,11 +168,11 @@ li.entry {
 #under {
     position: fixed;
     z-index: 0;
-  }
+}
 
 #underabs {
-position: relative;
-z-index: 0;
+    position: relative;
+    z-index: 0;
 }
 
 #over {
@@ -168,15 +187,15 @@ z-index: 0;
 
 navbar {
     text-decoration: none;
-    list-style: none; 
-    margin:auto;
+    list-style: none;
+    margin: auto;
     text-align: left;
-    
+
 }
 
-div.header{
+div.header {
     width: 100%;
-    background-color: rgb(58, 72, 119);
+    background-color: #10364B;
     height: 60px;
     position: relative;
 }
@@ -187,7 +206,7 @@ div.nav {
     max-width: 150px;
     height: 100%;
     position: fixed;
-    background-color: rgb(58, 72, 119);
+    background-color: #10364B;
     text-align: center;
     display: flex;
 
@@ -219,7 +238,7 @@ div.links {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 img.left {
@@ -234,7 +253,7 @@ img.right {
 
 img.center {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 img {
@@ -243,24 +262,24 @@ img {
 
 .image {
     flex-basis: 100%;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 
-h2{
+h2 {
     margin: 1%;
 }
 
 
 input.staticrypt-decrypt-button {
     background-color: rgb(58, 72, 119);
-  border: none;
-  color: white;
-  padding: 6px 10px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 input[type=password] {
