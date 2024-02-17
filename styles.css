@@ -67,7 +67,7 @@ iframe.page {
 
 a {
     text-decoration-line: none;
-    color: #166177
+    color: #017896
 }
 
 .right {
@@ -134,6 +134,7 @@ li.navMa {
     padding-top: 7px;
     padding-bottom: 5px;
     margin: auto;
+    margin-top:10%;
     transform: translateX(-16px);
 }
 
