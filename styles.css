@@ -280,7 +280,7 @@ h2 {
 
 
 input.staticrypt-decrypt-button {
-    background-color: rgb(58, 72, 119);
+    background-color: #166177;
     border: none;
     color: white;
     padding: 6px 10px;
@@ -292,3 +292,8 @@ input.staticrypt-decrypt-button {
 input[type=password] {
     outline: none;
 }
+
+.hidden {
+    display: none !important;
+}
+
